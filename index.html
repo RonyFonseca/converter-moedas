@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter moedas</title>
+</head>
+<body>
+    <div id="container-converter">
+
+        <header>
+            <h1>CodeClub Convert Money</h1>
+        </header>
+
+        <main>
+
+            <label>
+                Converter de
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter para
+                <select id="moeda-gerais">
+                    <option>US$ Dólar Americano</option>
+                    <option>Euro</option>
+                </select>
+            </label>
+
+            <div id="container-input-conveter">
+                <input type="text" placeholder="R$ 1.000" id="money-br">
+            </div>
+
+            <div id="container-button">
+                <button id="botao-convert">Converter</button>
+            </div>
+
+            <section>
+                <div>
+                    <img src="assets/bandeira-oficial-do-brasil.png" class="bandeira">
+                    <p>Real</p>
+                    <p id="text-value-br">R$ 1.000</p>
+                </div>
+
+                <div>
+                    <img src="assets/estados-unidos.jpg" class="bandeira" id="bandeira-img">
+                    <p id="name-moeda">Dólar Americano</p>
+                    <p id="text-value">US$ 1.000</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
